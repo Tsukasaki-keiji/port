@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get 'top' => 'homes#top'
   get 'top' => 'homes#about'
 
+  root 'post_images#index'
+
 end
