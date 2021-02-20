@@ -24,9 +24,14 @@
                     <li>By
                       <%= post_image.user.name %>
                     </li>
-                    <li>
-                      <a href="#">23 コメント</a>
-                    </li>
+                    <ul class="inline-meta">
+                      <li>By
+                        <%= post_image.user.name %>
+                      </li>
+                      <li>
+                        <%= link_to "#{post_image.post_comments.count} コメント", post_image_path(post_image.id) %>
+                      </li>
+                    </ul>
                   </ul>
                 </div>
               </div>
